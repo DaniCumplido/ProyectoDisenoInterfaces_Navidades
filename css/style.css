@@ -2,6 +2,7 @@
    FUENTES (Google Fonts)
    ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* =========================
    VARIABLES
@@ -26,7 +27,9 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     background-color: var(--gray);
     color: var(--dark);
     line-height: 1.6;
@@ -39,11 +42,15 @@ h3 {
     font-weight: 800;
     font-style: normal;
     color: var(--dark);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 p,
 li {
-    font-family: "Space Grotesk", sans-serif;
     color: var(--gray);
 }
 
@@ -57,6 +64,30 @@ li {
 #hero {
     padding: 0 3rem;
 }
+
+/* =========================
+   ICONOS
+   ========================= */
+
+i {
+    margin-right: 0.5rem;
+    color: var(--primary);
+}
+
+.footer-icons a i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: color 0.2s ease;
+}
+
+.footer-icons a:hover i {
+    color: var(--secondary);
+}
+
+.nav-brand i {
+    font-size: 1.3rem;
+}
+
 
 /* =========================
    NAV
@@ -147,6 +178,7 @@ li {
     background-size: cover;
     background-position: center;
     position: relative;
+    padding-top: 70px; /* altura del nav fijo, para el responsive */
 }
 
 #hero::before {
@@ -160,11 +192,11 @@ li {
 .hero-text {
     position: relative;
     padding: 2rem;
-    animation: fadeUp 1s ease forwards;
+    animation: fadeUpSlow 1s ease forwards;
 }
 
 .hero-text h1 {
-    font-size: 110px;
+    font-size: 7rem;
     margin-bottom: 1rem;
     font-weight: 800;
     background: linear-gradient(270deg, #6366f1, #22c55e, #f59e0b, #ec4899, #6366f1);
@@ -174,22 +206,8 @@ li {
     animation: gradientAnimation 10s ease infinite;
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .hero-text p {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     color: var(--light);
     font-weight: 500;
@@ -388,7 +406,7 @@ section#estadisticas {
 footer {
     background: var(--dark);
     color: var(--gray);
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
 }
 
 footer h4 {
@@ -430,18 +448,6 @@ footer a:hover {
 /* =========================
    ANIMACIONES
    ========================= */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes fadeUpSlow {
     from {
         opacity: 0;
@@ -451,6 +457,20 @@ footer a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -480,11 +500,19 @@ footer a:hover {
     }
 
     .hero-text h1 {
-        font-size: 2.2rem;
+        font-size: 4rem;
     }
 
     .features-grid,
     .pricing-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        padding: 0 0 2em 0;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
     }
 }

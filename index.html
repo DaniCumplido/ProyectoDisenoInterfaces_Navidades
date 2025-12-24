@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartQA</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ca4ee4c5f8.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
     <!-- Navegación -->
     <nav class="nav">
         <!-- Icono + texto a la izquierda -->
         <a href="#" class="nav-brand">
-            <img src="img/dxc.png" alt="SmartQA logo">
+            <i class="fa-solid fa-vial-circle-check"></i>
             <span>SmartQA</span>
         </a>
 
@@ -27,164 +28,242 @@
         </ul>
     </nav>
 
-
-    <!-- Hero -->
-    <section id="hero">
-        <div class="hero-text">
-            <h1>AI POWERED TESTING</h1>
-            <p>crea casos de prueba con inteligencia artificial</p>
-            <div class="hero-actions">
-                <a href="#features" class="btn primary">Ver producto</a>
-                <a href="#precios" class="btn secondary">Ver precios</a>
+    <header>
+        <!-- Hero -->
+        <section id="hero">
+            <div class="hero-text">
+                <h1>AI POWERED TESTING</h1>
+                <p>Diseña casos de prueba con inteligencia artificial</p>
+                <div class="hero-actions">
+                    <a href="#features" class="btn primary">Ver producto</a>
+                    <a href="#precios" class="btn secondary">Ver precios</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
-    <main class="container">
+    <main>
         <!-- Features / Producto -->
         <section id="features">
-            <h2>Cómo funciona</h2>
-            <div class="features-grid">
-                <article class="feature-card">
-                    <h3>Definición de requisitos</h3>
-                    <p>Introduce requisitos funcionales de forma clara y estructurada. Nuestro sistema detecta
-                        inconsistencias y posibles escenarios de prueba que podrías pasar por alto.</p>
-                    <img src="img/list.avif" alt="Definición">
-                </article>
+            <div class="container">
+                <h2>Cómo funciona</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>
+                            <i class="fa-solid fa-list-check"></i>
+                            Definición de requisitos
+                        </h3>
+                        <p>Introduce requisitos funcionales de forma clara y estructurada. Nuestro sistema detecta
+                            inconsistencias y posibles escenarios de prueba que podrías pasar por alto.</p>
+                        <img src="img/list.avif" alt="Definición">
+                    </article>
 
-                <article class="feature-card">
-                    <h3>Generación con IA</h3>
-                    <p>Convierte automáticamente tus requisitos en casos de prueba SIT y UAT completos, listos para
-                        ejecutar. Optimiza la cobertura de pruebas y reduce el riesgo de errores.</p>
-                    <img src="img/ai.avif" alt="IA">
-                </article>
+                    <article class="feature-card">
+                        <h3>
+                            <i class="fa-solid fa-brain"></i>
+                            Generación con IA
+                        </h3>
+                        <p>Convierte automáticamente tus requisitos en casos de prueba SIT y UAT completos, listos para
+                            ejecutar. Optimiza la cobertura de pruebas y reduce el riesgo de errores.</p>
+                        <img src="img/ai.avif" alt="IA">
+                    </article>
 
-                <article class="feature-card">
-                    <h3>Exportación</h3>
-                    <p>Descarga los casos de prueba en múltiples formatos estándar (Excel, PDF, CSV) para integrarlos
-                        con cualquier herramienta o compartir con tu equipo.</p>
-                    <img src="img/download.avif" alt="Exportación">
-                </article>
+                    <article class="feature-card">
+                        <h3>
+                            <i class="fa-solid fa-file-export"></i>
+                            Exportación
+                        </h3>
+                        <p>Descarga los casos de prueba en múltiples formatos estándar (Excel, PDF, CSV) para
+                            integrarlos
+                            con cualquier herramienta o compartir con tu equipo.</p>
+                        <img src="img/download.avif" alt="Exportación">
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- Colaboradores -->
         <section id="colaboradores">
-            <h2>Colaboradores</h2>
-            <div class="logos">
-                <img src="img/dxc.png" alt="DXC Technology">
-                <img src="img/accenture.png" alt="Accenture">
-                <img src="img/indra.png" alt="Indra">
-                <img src="img/bancoSabadell.png" alt="Banco de Sabadell">
-                <img src="img/vidaCaixa.png" alt="Vida Caixa">
-                <img src="img/aiguesBarcelona.png" alt="Aigües de Barcelona">
+            <div class="container">
+                <h2>Colaboradores</h2>
+                <div class="logos">
+                    <img src="img/dxc.png" alt="DXC Technology">
+                    <img src="img/accenture.png" alt="Accenture">
+                    <img src="img/indra.png" alt="Indra">
+                    <img src="img/bancoSabadell.png" alt="Banco de Sabadell">
+                    <img src="img/vidaCaixa.png" alt="Vida Caixa">
+                    <img src="img/aiguesBarcelona.png" alt="Aigües de Barcelona">
+                </div>
             </div>
         </section>
 
         <!-- Seguridad -->
         <section id="seguridad">
-            <h2>Seguridad</h2>
-            <p>Protección completa de tus datos mediante cifrado AES, backups automáticos diarios y cumplimiento
-                normativo. Control total sobre quién accede a cada proyecto y registro de auditoría.</p>
+            <div class="container">
+                <h2>Seguridad</h2>
+                <p>Protección completa de tus datos mediante cifrado AES, backups automáticos diarios y cumplimiento
+                    normativo. Control total sobre quién accede a cada proyecto y registro de auditoría.</p>
+            </div>
         </section>
 
         <!-- Precios -->
         <section id="precios">
-            <h2>Planes</h2>
-            <div class="pricing-grid">
-                <article class="price-card">
-                    <h3>Free</h3>
-                    <p class="price">0 €</p>
-                    <ul>
-                        <li>Pruebas individuales limitadas</li>
-                        <li>Soporte básico</li>
-                        <li>Exportación a PDF</li>
-                    </ul>
-                </article>
-                <article class="price-card destacada">
-                    <h3>Pro</h3>
-                    <p class="price">49 €</p>
-                    <ul>
-                        <li>Para equipos pequeños</li>
-                        <li>Casos de prueba ilimitados</li>
-                        <li>Exportación a Excel y CSV</li>
-                        <li>Integración con Jira y GitHub</li>
-                    </ul>
-                </article>
-                <article class="price-card">
-                    <h3>Team</h3>
-                    <p class="price">149 €</p>
-                    <ul>
-                        <li>Para organizaciones</li>
-                        <li>Gestión avanzada de usuarios</li>
-                        <li>Estadísticas y métricas completas</li>
-                        <li>Soporte prioritario</li>
-                    </ul>
-                </article>
+            <div class="container">
+                <h2>Planes</h2>
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <h3>
+                            <i class="fa-regular fa-circle"></i>
+                            Free
+                        </h3>
+                        <p class="price">0 €</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                Pruebas individuales limitadas
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-life-ring"></i>
+                                Soporte básico
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Exportación a PDF
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="price-card destacada">
+                        <h3>
+                            <i class="fa-solid fa-bolt"></i>
+                            Pro
+                        </h3>
+                        <p class="price">49 €</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-users"></i>
+                                Para equipos pequeños
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-infinity"></i>
+                                Casos de prueba ilimitados
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-file-excel"></i>
+                                Exportación a Excel y CSV
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-plug-circle-check"></i>
+                                Integración con Jira y GitHub
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="price-card">
+                        <h3>
+                            <i class="fa-solid fa-people-group"></i>
+                            Team
+                        </h3>
+                        <p class="price">149 €</p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-building"></i>
+                                Para organizaciones
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-users-gear"></i>
+                                Gestión avanzada de usuarios
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-chart-pie"></i>
+                                Estadísticas y métricas completas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-headset"></i>
+                                Soporte prioritario
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- Nueva sección: Integración -->
         <section id="integracion">
-            <h2>Integración con herramientas</h2>
-            <div class="integration-grid">
-                <img src="img/jira.png" alt="Integraciones">
-                <p>Compatible con Jira, HPQC, GitHub y otras herramientas de gestión de pruebas. Sincroniza tus casos de
-                    prueba y mantén todo tu flujo de QA bajo control desde un solo panel.</p>
+            <div class="container">
+                <h2>
+                    <i class="fa-solid fa-plug"></i>
+                    Integración con herramientas
+                </h2>
+                <div class="integration-grid">
+                    <img src="img/jira.png" alt="Integraciones">
+                    <p>Compatible con Jira, HPQC, GitHub y otras herramientas de gestión de pruebas. Sincroniza tus
+                        casos de
+                        prueba y mantén todo tu flujo de QA bajo control desde un solo panel.</p>
+                </div>
             </div>
         </section>
 
         <!-- Nueva sección: Estadísticas -->
         <section id="estadisticas">
-            <h2>Estadísticas inteligentes</h2>
-            <div class="stats-grid">
-                <p>Obtén métricas en tiempo real sobre cobertura de pruebas, eficiencia y defectos encontrados. Analiza
-                    la evolución de tus proyectos y toma decisiones basadas en datos.</p>
-                <img src="img/estadisticas.jpg" alt="Estadísticas">
+            <div class="container">
+                <h2>
+                    <i class="fa-solid fa-chart-line"></i>
+                    Estadísticas inteligentes
+                </h2>
+                <div class="stats-grid">
+                    <p>Obtén métricas en tiempo real sobre cobertura de pruebas, eficiencia y defectos encontrados.
+                        Analiza
+                        la evolución de tus proyectos y toma decisiones basadas en datos.</p>
+                    <img src="img/estadisticas.jpg" alt="Estadísticas">
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer completo -->
     <footer id="contacto">
-        <div class="footer-top">
-            <div class="footer-section">
-                <h4>Producto</h4>
-                <ul>
-                    <li><a href="#features">Funciones</a></li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#integracion">Integraciones</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#features">Funciones</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#integracion">Integraciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Compañía</h4>
-                <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Carreras</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Soporte</h4>
-                <ul>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Documentación</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Política de privacidad</a></li>
-                    <li><a href="#">Términos de uso</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 SmartQA</p>
-            <div class="footer-icons">
-                <!-- iconos sociales -->
+            <div class="footer-bottom">
+                <p>© 2024 SmartQA</p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
         </div>
     </footer>
